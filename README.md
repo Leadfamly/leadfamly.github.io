@@ -62,7 +62,7 @@ You have the possibility to loop though the page and by following the interface 
 | ------------- | --------------------- | -------------------------------------- |
 | getAll()      | `Promise<flowpage[]>` |                                        |
 | makeActive()  | `Promise<void>`       |                                        |
-| showMessage() |              void         | `title: string`, `description: string` |
+| showMessage() | void                  | `title: string`, `description: string` |
 
 ## campaign
 
