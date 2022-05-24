@@ -18,8 +18,8 @@ window.addEventListener('lf-sdk-ready', async () => {
 - `window.sdk.off()` (De-register an event listener.)
   ### events that can be listened to:
 
-- [formSubmit](#formField) 
-- [flowPageChange](#flowPage-Change)
+- [formSubmit](#formSubmit) 
+- [flowPageChange](#flowPageChange)
 
 ## formSubmit
 
@@ -54,7 +54,7 @@ BAD (nothing happens) 🚫
 **however** it's possible to have other logic inside the suspense, it will get executed if a Promise is present!
 
 
-## flowPage Change
+## flowPageChange
 
 | name | type                  |
 | ---- | --------------------- |
