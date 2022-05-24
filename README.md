@@ -4,7 +4,7 @@ Our sdk contains by 2 ways of communicating - listening to our [Events](#Events)
 the SDK contains Event communcation and by users current context, and only what the user is allowed to see.
 
 ## lf-sdk-ready
-when you want to communicate to our SDK, it's important to listen to the window event
+When you want to communicate to our SDK, it's important to listen to the window event
 `lf-sdk-ready` first. This is because SDK is loaded asynchronously, and isn't ready immediately on window load.
 ``` javascript 
 window.addEventListener('lf-sdk-ready', () => {
