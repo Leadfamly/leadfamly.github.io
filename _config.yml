@@ -1,2 +1,2 @@
-markdown: GFM
-title: 'SDK Docs'
+- name: Vuepress to GitHub Pages
+  uses: testthedocs/github-pages-deploy-action@0.0.4
