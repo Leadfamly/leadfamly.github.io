@@ -1,1 +1,12 @@
 node_modules
+/coverage
+/src/client/shared.ts
+/src/node/shared.ts
+*.log
+.DS_Store
+.idea
+.vite_opt_cache
+.vscode
+dist
+pnpm-global
+TODOs.md
