@@ -1,4 +1,4 @@
-# Welcome
+# Guide to get started
 
 Thank you for getting into our documentation, we try to run this documentation site as close to a open source ideology as possible - meaning you are welcome to get into the [Github repository](https://github.com/leadfamly/sdk-docs) and create an issue if you have suggestions or want to report a bug in the documentation.
 If you want to contribute with example code

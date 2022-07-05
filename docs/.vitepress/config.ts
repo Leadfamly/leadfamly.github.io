@@ -1,6 +1,9 @@
-export default {
-    title: 'Leadfamly SDK',
-    description: 'For developers working with the Leadfamly SDK',
+import { defineConfig } from "vitepress"
+
+export default defineConfig({
+    title: 'SDK',
+    titleTemplate: 'Leadfamly',
+    description: 'For developers working with the Leadfamly SDK.',
   
     // Theme related configurations.
     themeConfig: {
@@ -13,9 +16,9 @@ export default {
       socialLinks: [
         { icon: 'github', link: 'https://github.com/leadfamly/sdk-docs' }
       ],
-      // logo: '/logo.svg',
+      logo: '/logo.svg',
     }
-  }
+  })
 
   function nav() {
     return [

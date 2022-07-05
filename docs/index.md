@@ -1,8 +1,8 @@
 ---
 layout: home
 
-title: Leadfamly Documentation
-titleTemplate: Vite & Vue Powered Static Site Generator
+title: SDK Documentation
+titleTemplate: Leadfamly
 
 hero:
   name: Leadfamly SDK
