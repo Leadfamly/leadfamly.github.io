@@ -1,6 +1,6 @@
 # Getting Started
 
-
+This __Software develop kit__ allow developers take control of the flow of your campaigns you run.
 ## Events
 Collection of events to subscribe to:
 

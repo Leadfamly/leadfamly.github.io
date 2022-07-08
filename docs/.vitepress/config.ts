@@ -22,9 +22,8 @@ export default defineConfig({
 
   function nav() {
     return [
-      { text: 'Guide', link: '/guide/getting-started', activeMatch: '/guide/' },
-      { text: 'SDK', link: '/sdk/getting-started', activeMatch: '/sdk/' },
-
+      { text: 'Guide', link: '/guide/introduction', activeMatch: '/guide/' },
+      { text: 'SDK', link: '/sdk/getting-started', activeMatch: '/sdk/' }
     ]
   }
 
@@ -33,7 +32,8 @@ export default defineConfig({
       {
         text: 'Guide',
         items: [
-          { text: 'Getting started', link: '/guide/getting-started', activeMatch: '/guide/' },
+          { text: 'Introduction', link: '/guide/introduction' },
+          { text: 'Quick start', link: '/guide/quick-start' }
         ]
       },
     ]
@@ -44,24 +44,23 @@ export default defineConfig({
       {
         text: 'SDK',
         items: [
-          { text: 'Getting started', link: '/sdk/getting-started', activeMatch: '/sdk/' },
+          { text: 'Getting started', link: '/sdk/getting-started' },
         ]
       },
       {
         text: 'Events',
-        collapsible: true,
         items: [
-          { text: 'Event Listening', link: 'sdk/events/register.md' },
-          { text: 'FormSubmit', link: 'sdk/events/formSubmit.md' },
-          { text: 'FlowPage Changed', link: 'sdk/events/flowPageChanged.md' },
+          { text: 'Event Listening', link: '/sdk/register-events' },
+          { text: 'FormSubmit', link: '/sdk/formsubmit-event' },
+          { text: 'FlowPage Changed', link: '/sdk/flowpage-changed-event' },
         ]
       },
       {
         text: 'API',
-        collapsible: true,
         items: [
-          { text: 'Campaign', link: 'sdk/api/campaign.md' },
-          { text: 'FlowPages', link: 'sdk/api/flowPages.md' }
+          { text: 'Campaign', link: '/sdk/campaign-api' },
+          { text: 'FlowPages', link: '/sdk/flowpages-api' },
+          { text: 'Replacement Tags', link: '/sdk/replacement-tags-api' }
         ]
       },
     ]
