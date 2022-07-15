@@ -16,5 +16,5 @@ The event can contain a callback function `suspense()` when using this, it will 
 The API is a simple way of communicating with the platform. The `window.sdk` Object, has a collection of endpoints.
 
 ### Endpoint list
-- [Campaign](./api/campaign)
-- [FlowPages](./api/flowPages)
+- [Campaign](/sdk/campaign-api)
+- [FlowPages](/sdk/flowpages-api)
