@@ -23,7 +23,8 @@ export default defineConfig({
   function nav() {
     return [
       { text: 'Guide', link: '/guide/introduction', activeMatch: '/guide/' },
-      { text: 'SDK', link: '/sdk/getting-started', activeMatch: '/sdk/' }
+      { text: 'SDK', link: '/sdk/getting-started', activeMatch: '/sdk/' },
+      { text: 'CHANGELOG', link: '/CHANGELOG' }
     ]
   }
 
