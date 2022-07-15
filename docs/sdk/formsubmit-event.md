@@ -56,16 +56,9 @@ A getter that returns the current section that unfolds content inside.
 ```typescript
 function section(): SdkFormFieldModel[]
 ```
+## Interfaces
 
-## Interface
-
-| name       | type                                   | description                                                              |
-| ---------- | -------------------------------------- | ------------------------------------------------------------------------ |
-| suspense   | async callback `fn() => Promise<void>` | collects all promises inside, and awaits first getting resolved/rejected |
-| section    | [flowpage](#flowpage)                  |
-| formFields | [formField[]](#formField)              |
-
-## FormField
+### FormField
 | property | access     | type     |
 | -------- | ---------- | -------- |
 | id       | read only  | `number` |
@@ -74,7 +67,7 @@ function section(): SdkFormFieldModel[]
 | value    | read/write | `string  | undefined` |
 | valid    | read/write | `boolean | undefined` |
 
-## FlowPage
+### FlowPage
 | property   | access    | type                      |
 | ---------- | --------- | ------------------------- |
 | id         | read only | `number`                  |
@@ -83,21 +76,21 @@ function section(): SdkFormFieldModel[]
 | rows       | read only | [Row[]](#row)             |
 
 
-## Row
+### Row
 | property | access    | type                    |
 | -------- | --------- | ----------------------- |
 | id       | read only | `number`                |
 | label    | read only | `string` or `undefined` |
 | columns  | read only | [Column[]](#column)     |
 
-## Column
+### Column
 | property | access    | type                    |
 | -------- | --------- | ----------------------- |
 | id       | read only | `number`                |
 | label    | read only | `string` or `undefined` |
 | addons   | read only | [Addon[]](#addon)       |
 
-## Addon
+### Addon
 | property     | access    | type                    |
 | ------------ | --------- | ----------------------- |
 | alias        | read only | `string`                |

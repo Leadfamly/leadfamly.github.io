@@ -1,6 +1,14 @@
 # Campaign
 Get information about the campaign.
 
+## getId()
+getter that returns the campaign id.
+### type
+
+```typescript
+function getId():Promise<number | undefined>
+```
+
 ## Example
 
 ```javascript
@@ -15,6 +23,26 @@ window.addEventListener('lf-sdk-ready', async () => {
 });
 ```
 
+## getName()
+getter that returns the campaign id.
+### type
+
+```typescript
+function getName():Promise<string | undefined>
+```
+
+## Example
+
+```javascript
+window.addEventListener('lf-sdk-ready', async () => {
+     
+     const campaignName = await window.sdk.campaign.getName();
+
+     if(campaignName === 'My Game Campaign') {
+         window.alert('Hello World');
+     }
+});
+```
 
 ## Interface 
 
