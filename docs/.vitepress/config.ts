@@ -23,8 +23,7 @@ export default defineConfig({
   function nav() {
     return [
       { text: 'Guide', link: '/guide/introduction', activeMatch: '/guide/' },
-      { text: 'SDK', link: '/sdk/getting-started', activeMatch: '/sdk/' },
-      { text: 'CHANGELOG', link: '/CHANGELOG' }
+      { text: 'SDK', link: '/sdk/getting-started', activeMatch: '/sdk/' }
     ]
   }
 
@@ -54,6 +53,7 @@ export default defineConfig({
           { text: 'Event Listening', link: '/sdk/register-events' },
           { text: 'FormSubmit', link: '/sdk/formsubmit-event' },
           { text: 'FlowPage Changed', link: '/sdk/flowpage-changed-event' },
+          { text: 'Action', link: '/sdk/action-event' },
         ]
       },
       {

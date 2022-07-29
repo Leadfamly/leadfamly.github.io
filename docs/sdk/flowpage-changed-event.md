@@ -5,12 +5,16 @@ the `event` that you get from `flowPageChange` has two objects `to` and `from`
 `to` is never undefined, this event can only happen, when a flowpage changes, and succesfully change to new flowpage.
 `from` however can also be `undefined`, as the first flowpage that get into the flow will always be `undefined`
 
+### type
+```typescript
+function suspense(fn: () => Promise<void>): void
+```
 
 ## Example
 
 ```javascript
      window.sdk.on('flowPageChange', (event) => {
-         if(to.title === 'Presentation page') {
+         if(event.to.title === 'Presentation page') {
              window.alert('Hello World')
          }
      })

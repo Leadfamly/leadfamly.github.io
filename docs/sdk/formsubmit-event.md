@@ -26,36 +26,37 @@ window.addEventListener('lf-sdk-ready', async () => {
 
 **Note:** please see [promise example](https://github.com/Leadfamly/sdk-docs/blob/main/examples/promiseUsage.js) form more detailed usage.
 
-## formFields()
+## formFields Array
 A getter that returns the all the form fields in the registration form getting submitted.
-
-### type 
-```typescript
-function formFields(): FormField[]
-```
 
 ### example
 
 ```javascript
 window.addEventListener('lf-sdk-ready', async () => {
   window.sdk.on('formSubmit', (e) => {
-    e.formFields().forEach((formField) => {
-      if(formField.value === 'foo') {
-        window.alert('bar');
-      }
-    })
+        e.formFields.forEach((field) => {
+          if(field.label === 'Name') {
+            window.alert(field.value);
+          }
+        })
   });
 });
 ```
 
-## section()
+## section Object
 
 A getter that returns the current section that unfolds content inside.
 
-### type 
-```typescript
-function section(): SdkFormFieldModel[]
+### example
+
+```javascript
+window.addEventListener('lf-sdk-ready', async () => {
+  window.sdk.on('formSubmit', (e) => {
+    window.alert(e.section.title);
+  });
+});
 ```
+
 ## Interfaces
 
 ### FormField
